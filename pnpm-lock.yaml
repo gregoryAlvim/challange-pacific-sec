@@ -11,6 +11,9 @@ dependencies:
   '@phosphor-icons/react':
     specifier: ^2.0.13
     version: 2.0.13(react-dom@18.2.0)(react@18.2.0)
+  dotenv:
+    specifier: ^16.3.1
+    version: 16.3.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -23,6 +26,9 @@ dependencies:
   react-router-dom:
     specifier: ^6.16.0
     version: 6.16.0(react-dom@18.2.0)(react@18.2.0)
+  react-secure-storage:
+    specifier: ^1.3.0
+    version: 1.3.0
   styled-components:
     specifier: ^6.0.8
     version: 6.0.8(react-dom@18.2.0)(react@18.2.0)
@@ -2467,6 +2473,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /crypto-js@4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+    dev: false
+
   /css-color-keywords@1.0.0:
     resolution: {integrity: sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==}
     engines: {node: '>=4'}
@@ -2579,6 +2589,11 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /electron-to-chromium@1.4.527:
     resolution: {integrity: sha512-EafxEiEDzk2aLrdbtVczylHflHdHkNrpGNHIgDyA63sUQLQVS2ayj2hPw3RsVB42qkwURH+T2OxV7kGPUuYszA==}
@@ -3763,6 +3778,10 @@ packages:
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
+  /murmurhash-js@1.0.0:
+    resolution: {integrity: sha512-TvmkNhkv8yct0SVBSy+o8wYzXjE4Zz3PCesbfs8HiCXXdcTuocApFv11UWlNFWKYsP2okqrhb7JNlSm9InBhIw==}
+    dev: false
+
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -4064,6 +4083,13 @@ packages:
     dependencies:
       '@remix-run/router': 1.9.0
       react: 18.2.0
+    dev: false
+
+  /react-secure-storage@1.3.0:
+    resolution: {integrity: sha512-0878T4S7MBEjrdOuB1/Hh7F9+OTpyXPm6zhBfjRl/W3UbPdp9uVduxjTgvzJAxzU0Wfp5IfLBYW5EbSCYzoKqg==}
+    dependencies:
+      crypto-js: 4.1.1
+      murmurhash-js: 1.0.0
     dev: false
 
   /react@18.2.0:
