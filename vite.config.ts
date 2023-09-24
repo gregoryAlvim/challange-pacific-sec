@@ -7,5 +7,5 @@ export default defineConfig({
   define: {
     'process.env': {},
   },
-  base: '/challange-pacific-sec',
+  base: '/challange-pacific-sec/',
 })

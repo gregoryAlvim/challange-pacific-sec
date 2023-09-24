@@ -9,10 +9,13 @@ export function AppRoutes() {
   return (
     <UserProvider>
       <Routes>
-        <Route path="/" element={<DefaultLayout />}>
-          <Route path="/" element={<UserForm />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/user-details" element={<UserDetails />} />
+        <Route path="/challange-pacific-sec" element={<DefaultLayout />}>
+          <Route path="/challange-pacific-sec" element={<UserForm />} />
+          <Route path="/challange-pacific-sec/*" element={<NotFound />} />
+          <Route
+            path="/challange-pacific-sec/user-details"
+            element={<UserDetails />}
+          />
         </Route>
       </Routes>
     </UserProvider>
