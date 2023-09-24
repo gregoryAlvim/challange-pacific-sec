@@ -38,7 +38,7 @@ export function Form() {
   function handleUserDataFromForm(data: NewUserFormInputs) {
     createNewUser(data)
     reset()
-    navigate('/user-details')
+    navigate('/challange-pacific-sec/user-details')
   }
 
   return (

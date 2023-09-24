@@ -5,7 +5,7 @@ export function NoData() {
   return (
     <S.NoDataMessage>
       <h1>O formulário ainda não foi respondido!</h1>
-      <Link to="/">Acesse o formulário clicando aqui</Link>
+      <Link to="/challange-pacific-sec">Acesse o formulário clicando aqui</Link>
     </S.NoDataMessage>
   )
 }

@@ -18,7 +18,7 @@ export function Details({ data }: DetailsProps) {
 
   function handleResetUserData() {
     deleteUserData(null)
-    navigate('/')
+    navigate('/challange-pacific-sec')
   }
 
   return (

@@ -6,7 +6,8 @@ export function NotFound() {
     <S.NotFoundContainer>
       <h1>Ops! Você parece estar perdido.</h1>
       <p>
-        Volte para a página inicial: <Link to="/">Home</Link>
+        Volte para a página inicial:{' '}
+        <Link to="/challange-pacific-sec">Home</Link>
       </p>
     </S.NotFoundContainer>
   )
