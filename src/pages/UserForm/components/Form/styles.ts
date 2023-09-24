@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const UserForm = styled.form`
   display: flex;
+
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +28,7 @@ export const UserForm = styled.form`
 
     padding: 0 1rem;
     border-radius: 6px;
-    margin-top: 1.5rem;
+    margin: 1rem 0 2rem;
 
     color: ${(props) => props.theme.white};
     background: ${(props) => props.theme['green-500']};
