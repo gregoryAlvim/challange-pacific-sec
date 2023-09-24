@@ -11,11 +11,11 @@ export function AppRoutes() {
       <Routes>
         <Route path="/challange-pacific-sec" element={<DefaultLayout />}>
           <Route path="/challange-pacific-sec" element={<UserForm />} />
-          <Route path="/challange-pacific-sec/*" element={<NotFound />} />
           <Route
             path="/challange-pacific-sec/user-details"
             element={<UserDetails />}
           />
+          <Route path="/challange-pacific-sec/*" element={<NotFound />} />
         </Route>
       </Routes>
     </UserProvider>
