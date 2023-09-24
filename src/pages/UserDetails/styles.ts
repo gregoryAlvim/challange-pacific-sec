@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const UserFormContainer = styled.article`
+export const UserDetailsContainer = styled.article`
   min-width: 50rem;
   height: 60rem;
 
