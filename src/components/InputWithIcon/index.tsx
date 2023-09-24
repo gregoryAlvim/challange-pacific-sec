@@ -1,16 +1,9 @@
-import * as S from './styles'
-import { ElementType } from 'react'
+import { InputField } from './styles'
+import { InputIcon } from './InputIcon'
+import { InputRoot } from './InputRoot'
 
-interface InputWithIconProps {
-  icon: ElementType
-  children: React.ReactNode
-}
-
-export function InputWithIcon({ icon: Icon, children }: InputWithIconProps) {
-  return (
-    <S.InputContainer>
-      <Icon size={24} />
-      {children}
-    </S.InputContainer>
-  )
+export const CustomInput = {
+  Root: InputRoot,
+  Icon: InputIcon,
+  Field: InputField,
 }
