@@ -175,7 +175,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   &:hover {
     transition: all 0.3s;
   }
-`;function S8({title:e,...t}){return V.jsx(V.Fragment,{children:V.jsx(E8,{...t,children:e})})}function C8(){const e=xc(),{createNewUser:t}=Rs(),r=y8,{reset:n,control:a,register:i,handleSubmit:o,formState:{isSubmitting:s,errors:l}}=B2({resolver:G2(r)});function u(f){t(f),n(),e("/user-details")}return V.jsxs(py,{onSubmit:o(u),children:[V.jsx("h1",{children:"Formulário de entrada"}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:Up}),V.jsx(et.Field,{type:"text",placeholder:"Nome",...i("name")}),l.name&&V.jsx(Dn,{message:l.name.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:Fp}),V.jsx(et.Field,{type:"email",placeholder:"E-mail",...i("email")}),l.email&&V.jsx(Dn,{message:l.email.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:$p}),V.jsx(et.Field,{type:"date",title:"Data de nascimento",...i("dateOfBirth")}),l.dateOfBirth&&V.jsx(Dn,{message:l.dateOfBirth.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:jp}),V.jsx(N2,{name:"phone",defaultValue:"",control:a,render:({field:f})=>V.jsx(et.Field,{type:"text",id:"phone",placeholder:"(00) 0000-0000",onChange:p=>{const h=T2(p.target.value);p.target.value=h,f.onChange(h)}})}),l.phone&&V.jsx(Dn,{message:l.phone.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:yc}),V.jsx(et.Field,{type:"url",placeholder:"Linkedin",...i("linkedin")}),l.linkedin&&V.jsx(Dn,{message:l.linkedin.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:mc}),V.jsx(et.Field,{type:"url",placeholder:"GitHub",...i("github")}),l.github&&V.jsx(Dn,{message:l.github.message??""})]}),V.jsx(S8,{type:"submit",disabled:s,title:"Registrar dados"})]})}const T8=He.div`
+`;function S8({title:e,...t}){return V.jsx(V.Fragment,{children:V.jsx(E8,{...t,children:e})})}function C8(){const e=xc(),{createNewUser:t}=Rs(),r=y8,{reset:n,control:a,register:i,handleSubmit:o,formState:{isSubmitting:s,errors:l}}=B2({resolver:G2(r)});function u(f){t(f),n(),e("/challange-pacific-sec/user-details")}return V.jsxs(py,{onSubmit:o(u),children:[V.jsx("h1",{children:"Formulário de entrada"}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:Up}),V.jsx(et.Field,{type:"text",placeholder:"Nome",...i("name")}),l.name&&V.jsx(Dn,{message:l.name.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:Fp}),V.jsx(et.Field,{type:"email",placeholder:"E-mail",...i("email")}),l.email&&V.jsx(Dn,{message:l.email.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:$p}),V.jsx(et.Field,{type:"date",title:"Data de nascimento",...i("dateOfBirth")}),l.dateOfBirth&&V.jsx(Dn,{message:l.dateOfBirth.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:jp}),V.jsx(N2,{name:"phone",defaultValue:"",control:a,render:({field:f})=>V.jsx(et.Field,{type:"text",id:"phone",placeholder:"(00) 0000-0000",onChange:p=>{const h=T2(p.target.value);p.target.value=h,f.onChange(h)}})}),l.phone&&V.jsx(Dn,{message:l.phone.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:yc}),V.jsx(et.Field,{type:"url",placeholder:"Linkedin",...i("linkedin")}),l.linkedin&&V.jsx(Dn,{message:l.linkedin.message??""})]}),V.jsxs(et.Root,{children:[V.jsx(et.Icon,{icon:mc}),V.jsx(et.Field,{type:"url",placeholder:"GitHub",...i("github")}),l.github&&V.jsx(Dn,{message:l.github.message??""})]}),V.jsx(S8,{type:"submit",disabled:s,title:"Registrar dados"})]})}const T8=He.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +191,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       color: ${e=>e.theme["purple-500"]};
     }
   }
-`;function P8(){return V.jsxs(T8,{children:[V.jsx("h1",{children:"O formulário já foi respondido!"}),V.jsx(kc,{to:"/user-details",children:"Veja sua resposta aqui"})]})}function A8(){const{user:e}=Rs();return V.jsx(dy,{children:e?V.jsx(P8,{}):V.jsx(C8,{})})}const O8=He.main`
+`;function P8(){return V.jsxs(T8,{children:[V.jsx("h1",{children:"O formulário já foi respondido!"}),V.jsx(kc,{to:"/challange-pacific-sec/user-details",children:"Veja sua resposta aqui"})]})}function A8(){const{user:e}=Rs();return V.jsx(dy,{children:e?V.jsx(P8,{}):V.jsx(C8,{})})}const O8=He.main`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -219,7 +219,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       color: ${e=>e.theme["purple-500"]};
     }
   }
-`;function z6(){return V.jsxs(U6,{children:[V.jsx("h1",{children:"Ops! Você parece estar perdido."}),V.jsxs("p",{children:["Volte para a página inicial: ",V.jsx(kc,{to:"/",children:"Home"})]})]})}const H6=He.article`
+`;function z6(){return V.jsxs(U6,{children:[V.jsx("h1",{children:"Ops! Você parece estar perdido."}),V.jsxs("p",{children:["Volte para a página inicial:"," ",V.jsx(kc,{to:"/challange-pacific-sec",children:"Home"})]})]})}const H6=He.article`
   min-width: 50rem;
   height: 60rem;
 
@@ -241,7 +241,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       color: ${e=>e.theme["purple-500"]};
     }
   }
-`;function Z6(){return V.jsxs(B6,{children:[V.jsx("h1",{children:"O formulário ainda não foi respondido!"}),V.jsx(kc,{to:"/",children:"Acesse o formulário clicando aqui"})]})}const W6=He.div`
+`;function Z6(){return V.jsxs(B6,{children:[V.jsx("h1",{children:"O formulário ainda não foi respondido!"}),V.jsx(kc,{to:"/challange-pacific-sec",children:"Acesse o formulário clicando aqui"})]})}const W6=He.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -308,7 +308,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,X6=He.span`
   font-size: 1.6rem;
   color: ${e=>e.theme["gray-400"]};
-`;function La({title:e,description:t}){return V.jsxs(Q6,{children:[V.jsx(q6,{htmlFor:e,children:`${e}:`}),V.jsx(X6,{id:e,children:t})]})}function J6({data:e}){const t=xc(),{deleteUserData:r}=Rs();function n(){r(null),t("/")}return V.jsxs(W6,{children:[V.jsx("h1",{children:"Detalhes do usuário"}),V.jsx(La,{title:"Nome",description:e.name}),V.jsx(La,{title:"Idade",description:kh(e.dateOfBirth).toString()}),V.jsx(La,{title:"Data de nascimento",description:G6.format(new Date(e.dateOfBirth))}),V.jsx(La,{title:"E-mail",description:e.email}),V.jsx(La,{title:"Telefone",description:e.phone}),V.jsxs(Y6,{children:[V.jsx(Gd,{target:"_blank",title:"Linkedin",variant:"linkedin",className:e.linkedin===""?"noHaveLink":"",...e.linkedin!==""&&{href:e.linkedin},children:V.jsx(yc,{size:32})}),V.jsx(Gd,{title:"GitHub",target:"_blank",variant:"github",className:e.github===""?"noHaveLink":"",...e.github!==""&&{href:e.github},children:V.jsx(mc,{size:32})}),V.jsx(K6,{title:"Limpar dados",onClick:n,children:V.jsx(Vp,{size:32})})]})]})}function e_(){const{user:e}=Rs();return V.jsx(H6,{children:e?V.jsx(J6,{data:e}):V.jsx(Z6,{})})}function t_(){return V.jsx(j6,{children:V.jsx(m2,{children:V.jsxs(za,{path:"/",element:V.jsx(R8,{}),children:[V.jsx(za,{path:"/",element:V.jsx(A8,{})}),V.jsx(za,{path:"/*",element:V.jsx(z6,{})}),V.jsx(za,{path:"/user-details",element:V.jsx(e_,{})})]})})})}function r_(){return V.jsx(k2,{children:V.jsx(t_,{})})}const n_=fy`
+`;function La({title:e,description:t}){return V.jsxs(Q6,{children:[V.jsx(q6,{htmlFor:e,children:`${e}:`}),V.jsx(X6,{id:e,children:t})]})}function J6({data:e}){const t=xc(),{deleteUserData:r}=Rs();function n(){r(null),t("/challange-pacific-sec")}return V.jsxs(W6,{children:[V.jsx("h1",{children:"Detalhes do usuário"}),V.jsx(La,{title:"Nome",description:e.name}),V.jsx(La,{title:"Idade",description:kh(e.dateOfBirth).toString()}),V.jsx(La,{title:"Data de nascimento",description:G6.format(new Date(e.dateOfBirth))}),V.jsx(La,{title:"E-mail",description:e.email}),V.jsx(La,{title:"Telefone",description:e.phone}),V.jsxs(Y6,{children:[V.jsx(Gd,{target:"_blank",title:"Linkedin",variant:"linkedin",className:e.linkedin===""?"noHaveLink":"",...e.linkedin!==""&&{href:e.linkedin},children:V.jsx(yc,{size:32})}),V.jsx(Gd,{title:"GitHub",target:"_blank",variant:"github",className:e.github===""?"noHaveLink":"",...e.github!==""&&{href:e.github},children:V.jsx(mc,{size:32})}),V.jsx(K6,{title:"Limpar dados",onClick:n,children:V.jsx(Vp,{size:32})})]})]})}function e_(){const{user:e}=Rs();return V.jsx(H6,{children:e?V.jsx(J6,{data:e}):V.jsx(Z6,{})})}function t_(){return V.jsx(j6,{children:V.jsx(m2,{children:V.jsxs(za,{path:"/challange-pacific-sec",element:V.jsx(R8,{}),children:[V.jsx(za,{path:"/challange-pacific-sec",element:V.jsx(A8,{})}),V.jsx(za,{path:"/challange-pacific-sec/*",element:V.jsx(z6,{})}),V.jsx(za,{path:"/challange-pacific-sec/user-details",element:V.jsx(e_,{})})]})})})}function r_(){return V.jsx(k2,{children:V.jsx(t_,{})})}const n_=fy`
   * {
     margin: 0;
     padding: 0;
