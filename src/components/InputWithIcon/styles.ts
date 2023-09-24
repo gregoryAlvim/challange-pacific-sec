@@ -6,7 +6,7 @@ export const InputContainer = styled.label`
   display: flex;
   align-items: center;
   gap: 1rem;
-
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   padding: 1rem;
   color: ${(props) => props.theme.white};

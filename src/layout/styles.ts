@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LayoutContainer = styled.div`
+export const LayoutContainer = styled.main`
   position: fixed;
   top: 50%;
   left: 50%;

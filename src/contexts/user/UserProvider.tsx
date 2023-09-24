@@ -1,5 +1,5 @@
 import { UserContext } from './UserContext'
-import { ReactNode, useCallback, useEffect, useReducer } from 'react'
+import { ReactNode, useEffect, useReducer } from 'react'
 import { userReducer } from '../../reducers/user/reducer'
 import { UserType } from '../../@types/mockes'
 import secureLocalStorage from 'react-secure-storage'
