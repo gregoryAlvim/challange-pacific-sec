@@ -1,4 +1,5 @@
 import * as z from 'zod'
+import { calcUserAge } from '../utils/calcUserAge'
 
 const noScripts = (value: string) => {
   const scriptRegex = /<script\b[^>]*>[\s\S]*<\/script>/i
@@ -26,7 +27,12 @@ export const UserSchema = z.object({
     .nonempty('O e-mail é obrigatório')
     .email('Formato de e-mail inválido')
     .toLowerCase(),
-  dateOfBirth: z.string().nonempty('A data de nascimento é obrigatória'),
+  dateOfBirth: z
+    .string()
+    .nonempty('A data de nascimento é obrigatória')
+    .refine((value) => (calcUserAge(value) < 18 ? null : value), {
+      message: 'Usuário menor de idade',
+    }),
   phone: z.string().nonempty('O telefone é obrigatório').refine(noScripts, {
     message: 'Este campo não permite scripts.',
   }),
